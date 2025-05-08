@@ -31,7 +31,7 @@ export default function App() {
 
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
-
+  
   useEffect(() => {
     if (!isFrameReady) {
       setFrameReady();
@@ -58,6 +58,7 @@ export default function App() {
       );
     }
 
+ 
     if (frameAdded) {
       return (
         <div className="flex items-center space-x-1 text-sm font-medium text-[#0052FF] animate-fade-out">
