@@ -16,7 +16,7 @@ import {
   TransactionStatus,
 } from "@coinbase/onchainkit/transaction";
 import { useNotification } from "@coinbase/onchainkit/minikit";
-
+import { NFTMintCard } from '@coinbase/onchainkit/nft';
 type ButtonProps = {
   children: ReactNode;
   variant?: "primary" | "secondary" | "outline" | "ghost";
