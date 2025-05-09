@@ -107,8 +107,7 @@ export default function App() {
         <main className="font-serif">
 
 <NFTMintCard
-  contractAddress='0xed2f34043387783b2727ff2799a46ce3ae1a34d2'
-  tokenId='2'
+  contractAddress='0x068BC80E15c38d91E09653EF714A7b1E3B2052Bc'
 >
   <NFTCreator />
   <NFTMedia />
