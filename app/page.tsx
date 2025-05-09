@@ -31,19 +31,8 @@ import {
   NFTAssetCost, 
   NFTMintButton, 
 } from '@coinbase/onchainkit/nft/mint'; 
-import type { LifecycleStatus } from '@coinbase/onchainkit/nft'; 
- 
-const statusHandler = (status: LifecycleStatus) => { 
-  const { statusName, statusData } = status; 
-  switch (statusName) { 
-    case 'success': 
-      // handle success
-    case 'error': 
-      // handle error
-    default: 
-      // handle 'init' state
-  } 
-} 
+
+
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
@@ -118,10 +107,16 @@ export default function App() {
         <main className="font-serif">
 
 <NFTMintCard
-  onStatus={statusHandler}  
-  contractAddress='0xb4703a3a73aec16e764cbd210b0fde9efdab8941'
+  contractAddress='0xed2f34043387783b2727ff2799a46ce3ae1a34d2'
+  tokenId='2'
 >
-  <NFTMedia /></NFTMintCard>
+  <NFTCreator />
+  <NFTMedia />
+  <NFTCollectionTitle />
+  <NFTQuantitySelector />
+  <NFTAssetCost />
+  <NFTMintButton />
+</NFTMintCard>
 
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
