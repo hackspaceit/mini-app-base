@@ -23,6 +23,12 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
+import { NFTMintCard } from '@coinbase/onchainkit/nft'; 
+ 
+<NFTMintCard
+  contractAddress='0xb4703a3a73aec16e764cbd210b0fde9efdab8941'
+>
+</NFTMintCard>
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
