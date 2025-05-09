@@ -17,12 +17,7 @@ import {
 } from "@coinbase/onchainkit/transaction";
 import { useNotification } from "@coinbase/onchainkit/minikit";
 
-import { NFTMintCard } from '@coinbase/onchainkit/nft'; 
- 
-<NFTMintCard
-  contractAddress='0xb4703a3a73aec16e764cbd210b0fde9efdab8941'
->
-</NFTMintCard>
+
 
 type ButtonProps = {
   children: ReactNode;
