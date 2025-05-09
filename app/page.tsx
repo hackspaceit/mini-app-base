@@ -23,12 +23,16 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
-import { NFTMintCard } from '@coinbase/onchainkit/nft'; 
+import { NFTMintCard } from '@coinbase/onchainkit/nft';
+import { NFTMedia } from '@coinbase/onchainkit/nft/view'; 
+import {
+  NFTCreator, 
+  NFTCollectionTitle, 
+  NFTQuantitySelector, 
+  NFTAssetCost, 
+  NFTMintButton, 
+} from '@coinbase/onchainkit/nft/mint'; 
  
-<NFTMintCard
-  contractAddress='0xb4703a3a73aec16e764cbd210b0fde9efdab8941'
->
-</NFTMintCard>
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -103,8 +107,21 @@ export default function App() {
         </header>
 
         <main className="flex-1">
-          {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
-          {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
+          
+
+<NFTMintCard
+  contractAddress='0xed2f34043387783b2727ff2799a46ce3ae1a34d2'
+  tokenId='2'
+>
+  <NFTCreator />
+  <NFTMedia />
+  <NFTCollectionTitle />
+  <NFTQuantitySelector />
+  <NFTAssetCost />
+  <NFTMintButton />
+</NFTMintCard>
+
+
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
