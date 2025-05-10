@@ -17,7 +17,21 @@ import {
 } from "@coinbase/onchainkit/transaction";
 import { useNotification } from "@coinbase/onchainkit/minikit";
 
-
+function useNFTData() {  
+  return {  
+    title: 'My NFT',  
+    imageUrl: 'https://example.com/image.png',  
+  }  
+}  
+ 
+async function buildMintTransaction() {  
+  const response = await fetch('https://api.minttransaction.com');  
+  return await response.json();  
+}  
+ 
+export default function NFTComponent() {
+  return ;
+}
 
 type ButtonProps = {
   children: ReactNode;
