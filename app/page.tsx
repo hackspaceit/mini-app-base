@@ -22,7 +22,7 @@ import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { NFTMintCard } from '@coinbase/onchainkit/nft';
-import { NFTMedia } from '@coinbase/onchainkit/nft/view'; 
+
 import {
 
   NFTMintButton, 
