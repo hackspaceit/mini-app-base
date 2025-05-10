@@ -110,8 +110,8 @@ const presetAmountInputs = ['10', '20', '50'] as const;
   country="US"
   currency="USD"
 />;<br></br>
-    <iframe width="device-width"
-                        height="720"
+    <iframe width="120%"
+                        height="620"
                         src=
 "https://aztect-html5.vercel.app/"
                         title="GeeksforGeeks" >
