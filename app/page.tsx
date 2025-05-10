@@ -29,6 +29,7 @@ import {
 } from '@coinbase/onchainkit/nft/mint';
 import React from 'react'
 
+import { FundCard } from '@coinbase/onchainkit/fund';
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -102,7 +103,13 @@ export default function App() {
           <div>{saveFrameButton}</div>
         </header>
         <main className="font-serif">
-
+const presetAmountInputs = ['10', '20', '50'] as const;
+ 
+<FundCard
+  assetSymbol="ETH"
+  country="US"
+  currency="USD"
+/>;<br></br>
     <iframe width="device-width"
                         height="720"
                         src=
