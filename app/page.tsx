@@ -103,7 +103,7 @@ export default function App() {
         </header>
         <main className="font-serif">
 
-    <iframe width="100%"
+    <iframe width="device-width"
                         height="720"
                         src=
 "https://aztect-html5.vercel.app/"
