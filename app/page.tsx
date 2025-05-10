@@ -98,7 +98,7 @@ export default function App() {
         </header>
         <main className="font-serif">
 
- <iframe width="350"
+ <iframe width="100%"
                         height="720"
                         src=
 "https://bankr.bot"
