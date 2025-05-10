@@ -103,7 +103,7 @@ export default function App() {
           <div>{saveFrameButton}</div>
         </header>
         <main className="font-serif">
-const presetAmountInputs = ['10', '20', '50'] as const;
+          
  
 <FundCard
   assetSymbol="ETH"
