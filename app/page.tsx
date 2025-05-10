@@ -19,17 +19,10 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
+
 import { Button } from "./components/DemoComponents";
+
 import { Icon } from "./components/DemoComponents";
-import { NFTMintCard } from '@coinbase/onchainkit/nft';
-
-import {
-
-  NFTMintButton, 
-} from '@coinbase/onchainkit/nft/mint';
-import React from 'react'
-
-import { FundCard } from '@coinbase/onchainkit/fund';
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -103,26 +96,15 @@ export default function App() {
           <div>{saveFrameButton}</div>
         </header>
         <main className="font-serif">
-          
+
  
-<FundCard
-  assetSymbol="ETH"
-  country="US"
-  currency="USD"
-/>;<br></br>
-    <iframe width="120%"
-                        height="620"
+
+    <iframe width="100%"
+                        height="690"
                         src=
-"https://aztect-html5.vercel.app/"
-                        title="GeeksforGeeks" >
-                </iframe><br></br>      
-<NFTMintCard
-  contractAddress='0xed2f34043387783b2727ff2799a46ce3ae1a34d2'
-  tokenId='2'
->
- 
-  <NFTMintButton />
-</NFTMintCard>
+"https://aztect-html5.vercel.app/" >
+                </iframe>  
+
  
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
