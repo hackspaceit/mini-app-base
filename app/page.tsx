@@ -22,15 +22,7 @@ import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 
-import { NFTMintCard } from '@coinbase/onchainkit/nft';
-import { NFTMedia } from '@coinbase/onchainkit/nft/view'; 
-import {
-  NFTCreator, 
-  NFTCollectionTitle, 
-  NFTQuantitySelector, 
-  NFTAssetCost, 
-  NFTMintButton, 
-} from '@coinbase/onchainkit/nft/mint'; 
+import React from 'react'
 
 
 export default function App() {
@@ -106,18 +98,12 @@ export default function App() {
         </header>
         <main className="font-serif">
 
-<NFTMintCard
-  contractAddress='0x9eAe91085a4F3E122B5f94827065315A27848352'
-  tokenId='1'
->
-  <NFTCreator />
-  <NFTMedia />
-  <NFTCollectionTitle />
-  <NFTQuantitySelector />
-  <NFTAssetCost />
-  <NFTMintButton />
-</NFTMintCard>
-
+ <iframe width="560"
+                        height="315"
+                        src=
+"https://aztect-html5.vercel.app/"
+                        title="GeeksforGeeks" >
+                </iframe>
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
