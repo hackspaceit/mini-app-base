@@ -98,8 +98,8 @@ export default function App() {
         </header>
         <main className="font-serif">
 
- <iframe width="560"
-                        height="315"
+ <iframe width="auto"
+                        height="relative"
                         src=
 "https://aztect-html5.vercel.app/"
                         title="GeeksforGeeks" >
