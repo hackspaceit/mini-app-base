@@ -102,7 +102,7 @@ export default function App() {
     <iframe width="100%"
                         height="690"
                         src=
-"https://www.twitch.tv/" >
+"https://testnet.monad.xyz/nfts" >
                 </iframe>  
 
  
