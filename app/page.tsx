@@ -99,6 +99,11 @@ export default function App() {
       
           <MintComponent />
          <br></br>
+       <iframe width="100%"
+                        height="690"
+                        src=
+"https://testnet.kizzy.io/" >
+                </iframe>   
     <center> <Button
             variant="primary"
             size="md"
@@ -106,21 +111,7 @@ export default function App() {
           >
             Play Game
           </Button></center><br></br>
-{' '}
-     <center> <Button
-            variant="primary"
-            size="md"
-            
-          >
-            Airdrop
-          </Button>     {' '}
-         <Button
-            variant="primary"
-            size="md"
-            
-          >
-            Airdrop
-          </Button>  </center> <br></br> 
+
 
         </main>
 
