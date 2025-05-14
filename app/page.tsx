@@ -23,7 +23,8 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
-
+import NFTComponents from './components/NFTComponents';
+import MintComponent from './components/MintComponent';
 import FundComponents from './components/FundComponents';
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -97,6 +98,8 @@ export default function App() {
         </header>
 
         <main className="flex-1">
+          <MintComponent />
+          <NFTComponents />
           <FundComponents />
           {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
           {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
