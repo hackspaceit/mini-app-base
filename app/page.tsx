@@ -19,15 +19,12 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-import { Earn,
-        EarnDeposit,
-        EarnDetails,
-        DepositBalance,
-        DepositAmountInput,
-        DepositButton } from '@coinbase/onchainkit/earn';
+import EarnComponents from './components/EarnComponents';
+import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
 
 import { Icon } from "./components/DemoComponents";
+import { Earn } from "@coinbase/onchainkit/earn";
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
@@ -104,16 +101,8 @@ export default function App() {
 
  
 
-<Earn vaultAddress="0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A">
-  <EarnDeposit>
-    <EarnDetails />
-    <DepositBalance
- />
-    <DepositAmountInput className="border-2 border-green-400" />
-    <DepositButton />
-  </EarnDeposit>
-</Earn>     
-
+ <FundComponents />
+<EarnComponents />
  
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
