@@ -98,7 +98,7 @@ export default function App() {
         <main className="flex-1">
       
           <MintComponent />
-         <p></p>
+         <br></br>
      <Button
             variant="primary"
             size="md"
