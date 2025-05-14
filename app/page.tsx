@@ -104,6 +104,7 @@ export default function App() {
 "https://testnet.kizzy.io/" >
                 </iframe>
        <br></br>
+       <game.jsx />
           <MintComponent />
         
       
