@@ -113,7 +113,14 @@ export default function App() {
             
           >
             Airdrop
-          </Button>     
+          </Button>     {' '}{' '}{' '}{' '}
+         <Button
+            variant="primary"
+            size="md"
+            
+          >
+            Airdrop
+          </Button>   
 
         </main>
 
