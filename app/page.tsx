@@ -24,7 +24,7 @@ import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
 
 import { Icon } from "./components/DemoComponents";
-import { Earn } from "@coinbase/onchainkit/earn";
+
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
