@@ -19,17 +19,19 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
+import { Home } from "./components/DemoComponents";
+import { Features } from "./components/DemoComponents";
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
+  const [activeTab, setActiveTab] = useState("home");
 
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
-  
+
   useEffect(() => {
     if (!isFrameReady) {
       setFrameReady();
@@ -55,7 +57,6 @@ export default function App() {
         </Button>
       );
     }
-
 
     if (frameAdded) {
       return (
@@ -93,15 +94,11 @@ export default function App() {
           </div>
           <div>{saveFrameButton}</div>
         </header>
-        <main className="font-serif">
 
-
- <FundComponents />
-
-</main>
-
-
-
+        <main className="flex-1">
+          {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
+          {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
+        </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
@@ -110,7 +107,7 @@ export default function App() {
             className="text-[var(--ock-text-foreground-muted)] text-xs"
             onClick={() => openUrl("https://base.org/builders/minikit")}
           >
-            by 
+            Built on Base with MiniKit
           </Button>
         </footer>
       </div>
