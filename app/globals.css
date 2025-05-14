@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background-image: "url(/run.gif)";
+  --background: #1826e9;
   --foreground: #0f0050;
 }
 
@@ -16,7 +16,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background-image);
+  background: var(--background);
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;

@@ -93,14 +93,16 @@ export default function App() {
           </div>
           <div>{saveFrameButton}</div>
         </header>
- <div style={{ backgroundImage: "url(/run.gif)" }}>
+ <div style={{ 
+  backgroundImage: `url(${process.env.PUBLIC_URL + '/image.png'})` 
+}}></div>
         <main className="flex-1">
       
           <MintComponent />
          
           
         </main>
-</div>
+
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
             variant="ghost"
