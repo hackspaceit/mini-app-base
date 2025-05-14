@@ -21,7 +21,6 @@ import {
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
-import SnakeGame from './components/MintComponent';
 import MintComponent from './components/MintComponent';
 
 
@@ -99,7 +98,7 @@ export default function App() {
  
         <main className="flex-1">
     
-       <SnakeGame />
+       
           <MintComponent />
         
       
