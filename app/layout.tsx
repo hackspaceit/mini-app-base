@@ -44,8 +44,11 @@ export default function RootLayout({
     <html lang="en">
 
       <body className="bg-background">
+       <div style={{ 
+  backgroundImage: `url(${process.env.PUBLIC_URL + '/image.png'})` 
+}}>
         <Providers>{children}</Providers>
-      </body>
+    </div>  </body>
     </html>
   );
 }

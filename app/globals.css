@@ -13,10 +13,11 @@
     --foreground: #ffffff;
   }
 }
-
+ 
+  
 body {
   color: var(--foreground);
-  background-image: "url(${process.env.PUBLIC_URL + '/run.gif'})";
+  background: var(--background);
   font-family: "Geist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
