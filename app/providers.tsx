@@ -1,15 +1,13 @@
 "use client";
 
 import { type ReactNode } from "react";
-import { base, monadTestnet } from "wagmi/chains";
+import { monadTestnet } from "wagmi/chains";
 import { MiniKitProvider } from "@coinbase/onchainkit/minikit";
-import { coinbaseWallet } from 'wagmi/connectors';
-import { WagmiProvider, createConfig, http } from 'wagmi';
 export function Providers(props: { children: ReactNode }) {
   return (
     <MiniKitProvider
       apiKey={process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY}
-      chain={base}
+      chain={monadTestnet}
       config={{
         appearance: {
           mode: "auto",
@@ -22,21 +20,4 @@ export function Providers(props: { children: ReactNode }) {
       {props.children}
     </MiniKitProvider>
   );
-}
-
-const wagmiConfig = createConfig({
-  chains: [monadTestnet],
-  connectors: [
-    coinbaseWallet({
-      appName: 'onchainkit',
-    }),
-  ],
-  ssr: true,
-  transports: {
-    [monadTestnet.id]: http(),
-  },
-});
- 
-function App({ children }: { children: ReactNode }) {
-  return <WagmiProvider config={wagmiConfig}>{children}</WagmiProvider>;
 }
