@@ -93,14 +93,14 @@ export default function App() {
           </div>
           <div>{saveFrameButton}</div>
         </header>
-
+ <div style={{ backgroundImage: "url(/run.gif)" }}>
         <main className="flex-1">
-       <div style={{ backgroundImage: "url(/run.gif)" }}>
+      
           <MintComponent />
-         </div>
+         
           
         </main>
-
+</div>
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
             variant="ghost"
