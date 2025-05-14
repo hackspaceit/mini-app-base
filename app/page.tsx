@@ -98,12 +98,7 @@ export default function App() {
         </header>
  
         <main className="flex-1">
-      <iframe width="100%"
-                        height="690"
-                        src=
-"https://testnet.kizzy.io/" >
-                </iframe>
-       <br></br>
+    
        <SnakeGame />
           <MintComponent />
         
