@@ -102,7 +102,7 @@ export default function App() {
     <iframe width="100%"
                         height="690"
                         src=
-"https://testnet.monad.xyz/nfts" >
+"https://testnet.kizzy.io/" >
                 </iframe>  
 
  
@@ -114,7 +114,7 @@ export default function App() {
             className="text-[var(--ock-text-foreground-muted)] text-xs"
             onClick={() => openUrl("https://base.org/builders/minikit")}
           >
-            Built on Base
+            by onchainkit
           </Button>
         </footer>
       </div>
