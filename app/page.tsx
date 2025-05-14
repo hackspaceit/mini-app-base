@@ -95,6 +95,7 @@ export default function App() {
         </header>
 
         <main className="flex-1">
+       
           <MintComponent />
          
           
