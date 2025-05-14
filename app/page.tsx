@@ -99,13 +99,13 @@ export default function App() {
       
           <MintComponent />
          <br></br>
-     <Button
+    <center> <Button
             variant="primary"
             size="md"
             
           >
             Play Game
-          </Button>
+          </Button></center>
 {' '}
       <Button
             variant="primary"
