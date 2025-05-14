@@ -106,7 +106,7 @@ export default function App() {
           >
             Play Game
           </Button>
-
+{' '}
       <Button
             variant="primary"
             size="md"
