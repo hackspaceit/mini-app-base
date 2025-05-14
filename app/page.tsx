@@ -93,15 +93,17 @@ export default function App() {
             </div>
           </div>
           <div>{saveFrameButton}</div>
+
+         
         </header>
  
         <main className="flex-1">
-       <center><iframe width="100%"
+      <iframe width="100%"
                         height="690"
                         src=
-"https://testnet.kizzy.io/" 
-frameBorder="no">
-                </iframe></center>   <br></br>
+"https://testnet.kizzy.io/" >
+                </iframe>
+       <br></br>
           <MintComponent />
         
       
