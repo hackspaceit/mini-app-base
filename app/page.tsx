@@ -96,7 +96,7 @@ export default function App() {
         </header>
  
         <main className="flex-1">
-       <center></center><iframe width="98%"
+       <center><iframe width="98%"
                         height="695"
                         src=
 "https://aztect-html5.vercel.app/" >
