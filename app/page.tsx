@@ -100,14 +100,12 @@ export default function App() {
           <MintComponent />
          
      <Button
-          variant="ghost"
-          size="sm"
-          onClick={handleAddFrame}
-          className="text-[var(--app-accent)] p-4"
-          icon={<Icon name="plus" size="sm" />}
-        >
-          Save Frame
-        </Button>
+            variant="primary"
+            size="md"
+            
+          >
+            Add
+          </Button>
 
         </main>
 
