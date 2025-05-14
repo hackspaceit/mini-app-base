@@ -21,7 +21,7 @@ import {
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
-import MintComponent from './components/MintComponent';
+
 import Card from './components/Card';
 
 export default function App() {
@@ -99,7 +99,7 @@ export default function App() {
         <main className="flex-1">
     
        <center><Card /></center>
-          <MintComponent />
+          
      
     
 
