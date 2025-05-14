@@ -19,7 +19,12 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-
+import { Earn,
+        EarnDeposit,
+        EarnDetails,
+        DepositBalance,
+        DepositAmountInput,
+        DepositButton } from '@coinbase/onchainkit/earn';
 import { Button } from "./components/DemoComponents";
 
 import { Icon } from "./components/DemoComponents";
@@ -99,11 +104,15 @@ export default function App() {
 
  
 
-    <iframe width="100%"
-                        height="690"
-                        src=
-"https://testnet.kizzy.io/" >
-                </iframe>  
+<Earn vaultAddress="0x7BfA7C4f149E7415b73bdeDfe609237e29CBF34A">
+  <EarnDeposit>
+    <EarnDetails />
+    <DepositBalance
+ />
+    <DepositAmountInput className="border-2 border-green-400" />
+    <DepositButton />
+  </EarnDeposit>
+</Earn>     
 
  
 </main>
