@@ -47,7 +47,7 @@ export default function App() {
     if (context && !context.client.added) {
       return (
         <Button
-          variant="ghost"
+          variant="primary"
           size="sm"
           onClick={handleAddFrame}
           className="text-[var(--app-accent)] p-4"
@@ -61,7 +61,7 @@ export default function App() {
     if (frameAdded) {
       return (
         <div className="flex items-center space-x-1 text-sm font-medium text-[#0052FF] animate-fade-out">
-          <Icon name="check" size="sm" className="text-[#0052FF]" />
+          <Icon name="check" size="sm" className="text-[#0052ff]" />
           <span>Saved</span>
         </div>
       );
