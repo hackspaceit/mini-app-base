@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background-image: url"url(/image.png)";
+  --background-image: "url(/run.gif)";
   --foreground: #0f0050;
 }
 
