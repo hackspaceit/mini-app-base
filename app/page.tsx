@@ -42,6 +42,7 @@ export default function App() {
     setFrameAdded(Boolean(frameAdded));
   }, [addFrame]);
 
+
   const saveFrameButton = useMemo(() => {
     if (context && !context.client.added) {
       return (
@@ -93,7 +94,6 @@ export default function App() {
           </div>
           <div>{saveFrameButton}</div>
 
-         
         </header>
  
         <main className="flex-1">
