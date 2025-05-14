@@ -98,13 +98,13 @@ export default function App() {
         <main className="flex-1">
       
           <MintComponent />
-         
+         <p></p>
      <Button
             variant="primary"
             size="md"
             
           >
-            Add
+            Play Game
           </Button>
 
         </main>
