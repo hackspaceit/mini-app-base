@@ -34,16 +34,3 @@ async function buyCoin() {
   
   return result;
 }
-
-type TradeParams = {
-  direction
-: "sell" | "buy";  // The trade direction
-  target: Address;            // The target coin contract address
-  args: {
-    recipient: Address;       // The recipient of the trade output
-    orderSize: bigint;        // The size of the order
-    minAmountOut?: bigint;    // Optional minimum amount to receive
-    sqrtPriceLimitX96?: bigint; // Optional price limit for the trade
-    tradeReferrer?: Address;  // Optional referrer address for the trade
-  };
-};
