@@ -102,7 +102,7 @@ export default function App() {
        <iframe width="100%"
                         height="690"
                         src=
-"https://testnet.kizzy.io/" >
+"https://aztect-html5.vercel.app/" >
                 </iframe>   
     <center> <Button
             variant="primary"
