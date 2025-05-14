@@ -4,14 +4,8 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const CONTRACT_ADDRESSES = [
-  '0xb4703a3a73aec16e764cbd210b0fde9efdab8941',
-  '0x34ee9c5307d2bbcbf0c961b14eea7faaaa2dbf21',
-  '0xc5183533f98aa1520e6eff0c4b184c8b2c1b781e',
-  '0xc6a1f929b7ca5d76e0fa21eb44da1e48765990c5',
-  '0x03a4baf3c9450aa25ed21b042001f53d129caeb3',
-  '0xd722ffa7fe325cae2939e8715b4384d1d8479d88',
-  '0x877f0f3fef81c28a8c40fe060b17d254003377ad',
-  '0xaaf6f699f1136c41dcf81735d483122683d69a64',
+  
+  '0x068BC80E15c38d91E09653EF714A7b1E3B2052Bc',
 
 ] as const;
 
