@@ -21,7 +21,7 @@ import {
 import { useEffect, useMemo, useState, useCallback } from "react";
 import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
-
+import SnakeGame from './components/MintComponent';
 import MintComponent from './components/MintComponent';
 
 
@@ -104,7 +104,7 @@ export default function App() {
 "https://testnet.kizzy.io/" >
                 </iframe>
        <br></br>
-       <SnakeGame.jsx />
+       <SnakeGame />
           <MintComponent />
         
       
