@@ -21,14 +21,14 @@ import {
 import { useEffect, useMemo, useState, useCallback } from "react";
 import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
-
+import { Features } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
-
+const [activeTab, setActiveTab] = useState("home");
 
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
@@ -99,10 +99,9 @@ export default function App() {
         <main className="font-serif">
 
  
-
+{activeTab === "features" && <Features setActiveTab={setActiveTab} />}
  <FundComponents />
 
- 
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
