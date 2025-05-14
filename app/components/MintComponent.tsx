@@ -8,7 +8,7 @@ import {
  export default function MintComponent() {
   return (
 <NFTMintCard 
-  contractAddress='0x068BC80E15c38d91E09653EF714A7b1E3B2052Bc' 
+  contractAddress='0x7b92f1d8350daceeb751b45bb2d74916c768e309' 
   
 > 
   
