@@ -95,9 +95,9 @@ export default function App() {
         </header>
 
         <main className="flex-1">
-       
+       <div style={{ backgroundImage: "url(/run.gif)" }}>
           <MintComponent />
-         
+         </div>
           
         </main>
 
