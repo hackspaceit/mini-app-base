@@ -110,7 +110,7 @@ const [activeTab, setActiveTab] = useState("home");
             className="text-[var(--ock-text-foreground-muted)] text-xs"
             onClick={() => openUrl("https://base.org/builders/minikit")}
           >
-            by onchainkit
+            by 
           </Button>
         </footer>
       </div>
