@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #593bdd;
+  --background: url'(https://mini-app-base-r4ni.vercel.app/icon.png)';
   --foreground: #0f0050;
 }
 
