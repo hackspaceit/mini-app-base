@@ -107,6 +107,14 @@ export default function App() {
             Play Game
           </Button>
 
+      <Button
+            variant="primary"
+            size="md"
+            
+          >
+            Airdrop
+          </Button>     
+
         </main>
 
         <footer className="mt-2 pt-4 flex justify-center">
