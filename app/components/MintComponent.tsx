@@ -12,7 +12,7 @@ import {
   
 > 
   
-    <NFTMintButton />
+    <NFTMintButton disabled={true}/>
 </NFTMintCard>
   );
 }
