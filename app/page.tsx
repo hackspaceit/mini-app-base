@@ -94,7 +94,7 @@ export default function App() {
           <div>{saveFrameButton}</div>
         </header>
  <div style={{ 
-  backgroundImage: `url(${process.env.PUBLIC_URL + '/image.png'})` 
+  backgroundImage: `url(${process.env.PUBLIC_URL + '/run.gif'})` 
 }}></div>
         <main className="flex-1">
       
