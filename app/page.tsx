@@ -105,22 +105,22 @@ export default function App() {
             
           >
             Play Game
-          </Button></center>
+          </Button></center><br></br>
 {' '}
-      <Button
+     <center> <Button
             variant="primary"
             size="md"
             
           >
             Airdrop
-          </Button>     {' '}{' '}{' '}{' '}
+          </Button>     {' '}
          <Button
             variant="primary"
             size="md"
             
           >
             Airdrop
-          </Button>   
+          </Button>  </center> <br></br> 
 
         </main>
 
