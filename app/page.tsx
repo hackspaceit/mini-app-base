@@ -19,7 +19,6 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-import EarnComponents from './components/EarnComponents';
 import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
 
@@ -102,7 +101,7 @@ export default function App() {
  
 
  <FundComponents />
-<EarnComponents />
+
  
 </main>
         <footer className="mt-2 pt-4 flex justify-center">
