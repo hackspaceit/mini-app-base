@@ -23,7 +23,6 @@ import { Button } from "./components/DemoComponents";
 import { Icon } from "./components/DemoComponents";
 import MintComponent from './components/MintComponent';
 
-
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
