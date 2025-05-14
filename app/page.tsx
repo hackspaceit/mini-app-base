@@ -24,6 +24,7 @@ import { Icon } from "./components/DemoComponents";
 import { Home } from "./components/DemoComponents";
 import { Features } from "./components/DemoComponents";
 
+import FundComponents from './components/FundComponents';
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
@@ -96,6 +97,7 @@ export default function App() {
         </header>
 
         <main className="flex-1">
+          <FundComponents />
           {activeTab === "home" && <Home setActiveTab={setActiveTab} />}
           {activeTab === "features" && <Features setActiveTab={setActiveTab} />}
         </main>
