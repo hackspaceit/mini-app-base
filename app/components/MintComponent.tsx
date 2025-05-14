@@ -12,7 +12,7 @@ import {
   return (
 <NFTMintCard 
   contractAddress='0x068BC80E15c38d91E09653EF714A7b1E3B2052Bc' 
-  tokenId='2'
+  
 > 
   <NFTCreator />
   <NFTMedia />
