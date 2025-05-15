@@ -108,12 +108,12 @@ export default function App() {
 
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
-            variant="ghost"
+            variant="primary"
             size="sm"
             className="text-[var(--ock-text-foreground-muted)] text-xs"
             onClick={() => openUrl("https://base.org/builders/minikit")}
           >
-             built with minikit
+             .
           </Button>
         </footer>
       </div>
