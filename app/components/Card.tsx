@@ -4,7 +4,7 @@ import MintComponent from './MintComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function BasicExample() {
   return (
-    <Card style={{ width: '22rem' }}>
+    <Card style={{ width: '100%' }}>
       <Card.Img variant="top" src="/run1.gif" />
       <Card.Body>
         <Card.Title>Run on Base</Card.Title>
