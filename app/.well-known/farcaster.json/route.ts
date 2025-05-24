@@ -13,10 +13,20 @@ export async function GET() {
       homeUrl: URL,
       iconUrl: process.env.NEXT_PUBLIC_ICON_URL,
       imageUrl: process.env.NEXT_PUBLIC_IMAGE_URL,
-      buttonTitle: `Launch ${process.env.NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME}`,
+      buttonTitle: `Play ${process.env.NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME}`,
       splashImageUrl: process.env.NEXT_PUBLIC_SPLASH_IMAGE_URL,
       splashBackgroundColor: `#${process.env.NEXT_PUBLIC_SPLASH_BACKGROUND_COLOR}`,
       webhookUrl: `${URL}/api/webhook`,
+      description: "Run on Base is a thrilling mini-app game on Farcaster.",
+      primaryCategory: "games",
+      tags : [
+      "rewards",
+      "leaderboard",
+      "warpcast",
+      "earn"
+    ],
+    tagline: "New game on warpcast",
+    ogTitle: "Rewards",
     },
   });
 }

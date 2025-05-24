@@ -19,20 +19,18 @@ import {
   WalletDropdownDisconnect,
 } from "@coinbase/onchainkit/wallet";
 import { useEffect, useMemo, useState, useCallback } from "react";
-import FundComponents from './components/FundComponents';
 import { Button } from "./components/DemoComponents";
-
 import { Icon } from "./components/DemoComponents";
 
+import Card from './components/Card';
 
 export default function App() {
   const { setFrameReady, isFrameReady, context } = useMiniKit();
   const [frameAdded, setFrameAdded] = useState(false);
-
-
+  
   const addFrame = useAddFrame();
   const openUrl = useOpenUrl();
-  
+
   useEffect(() => {
     if (!isFrameReady) {
       setFrameReady();
@@ -44,11 +42,12 @@ export default function App() {
     setFrameAdded(Boolean(frameAdded));
   }, [addFrame]);
 
+
   const saveFrameButton = useMemo(() => {
     if (context && !context.client.added) {
       return (
         <Button
-          variant="ghost"
+          variant="primary"
           size="sm"
           onClick={handleAddFrame}
           className="text-[var(--app-accent)] p-4"
@@ -59,11 +58,10 @@ export default function App() {
       );
     }
 
-
     if (frameAdded) {
       return (
         <div className="flex items-center space-x-1 text-sm font-medium text-[#0052FF] animate-fade-out">
-          <Icon name="check" size="sm" className="text-[#0052FF]" />
+          <Icon name="check" size="sm" className="text-[#0052ff]" />
           <span>Saved</span>
         </div>
       );
@@ -95,23 +93,27 @@ export default function App() {
             </div>
           </div>
           <div>{saveFrameButton}</div>
+
         </header>
-        <main className="font-serif">
-
  
+        <main className="flex-1">
+    
+       <Card />
+          
+     
+    
 
- <FundComponents />
 
- 
-</main>
+        </main>
+
         <footer className="mt-2 pt-4 flex justify-center">
           <Button
-            variant="ghost"
+            variant="primary"
             size="sm"
             className="text-[var(--ock-text-foreground-muted)] text-xs"
             onClick={() => openUrl("https://base.org/builders/minikit")}
           >
-            by onchainkit
+             .
           </Button>
         </footer>
       </div>
